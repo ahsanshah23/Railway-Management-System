@@ -1,0 +1,85 @@
+﻿h2{
+background-color: darkgray;
+padding: 20px 35px;
+margin: 10px -25px;
+text-align:center;
+border-radius: 10px 10px 0 0;
+}
+
+p{
+    color:black;
+}
+
+hr{
+margin: 10px -50px;
+border: 0;
+border-top: 1px solid #ccc;
+margin-bottom: 40px;
+}
+
+label{
+    background-color: darkgray;
+color: black;
+text-shadow: 0 1px 0 #fff;
+font-size: 14px;
+font-weight: bold;
+}
+center{
+font-size:32px;
+}
+.note{
+color:red;
+}
+.valid{
+color:green;
+}
+.back{
+text-decoration: none;
+border: 1px solid rgb(0, 143, 255);
+background-color: rgb(0, 214, 255);
+padding: 3px 20px;
+border-radius: 2px;
+color: black;
+}
+
+input[type=text],input[type=password]{
+width: 25%;
+height: 20px;
+
+margin-bottom: 25px;
+margin-top: 5px;
+
+color: black;
+font-size: 20px;
+border-radius: 5px;
+}
+
+
+
+input[type=submit]{
+font-size: 16px;
+background-color: darkgoldenrod;
+color: black;
+font-weight: bold;
+cursor: pointer;
+width: 10%;
+border-radius: 5px;
+padding: 10px 0;
+outline:none;
+}
+
+input[type=button]{
+font-size: 16px;
+background-color: white;
+
+color: black;
+font-weight: bold;
+cursor: pointer;
+width: 100%;
+border-radius: 5px;
+padding: 10px 0px;
+outline:none;
+}
+input[type=button]:hover{
+background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+}

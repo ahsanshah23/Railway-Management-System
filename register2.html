@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript">
+window.onload = function () {
+	document.getElementById("Password").onchange = validatePassword;
+	document.getElementById("ConfirmPassword").onchange = validatePassword;
+}
+function validatePassword(){
+var pass2=document.getElementById("ConfirmPassword").value;
+var pass1=document.getElementById("Password").value;
+if(pass1!=pass2)
+	document.getElementById("ConfirmPassword").setCustomValidity("Passwords Don't Match");
+else
+	document.getElementById("ConfirmPassword").setCustomValidity('');	 
+//empty string means no validation error
+}
+</script>
+
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Login, Sign up Header</title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/header-login-signup.css">
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<header class="header-login-signup">
+
+	<div class="header-limiter">
+
+	<h1><a href="#">Railway<span>Reservation</span></a></h1>
+
+
+		<nav>
+			<a href="home1.html">Home</a>
+			
+		</nav>
+
+		<ul>
+			<li><a href="userlogin.php">Login</a></li>
+			</ul>
+
+	</div>
+
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Record</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        .wrapper{
+            width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h2>User Registration Form</h2>
+                    </div>
+                    <p>Please fill this form and submit to register.</p>
+                    <form action="registerdata.php" method="post">
+                        <div class="form-group">
+                            <label>First Name:<input name="FirstName" type="text" required/></label>
+                            <span class="help-block"></span>
+                        </div>
+						
+						<div class="form-group">
+                            <label>Last Name:<input name="LastName" type="text" required/></label> 
+                            <span class="help-block"></span>
+                        </div>
+						
+						<div class="form-group">
+                           <label>CNIC: <input name="CNIC" type="number" maxlength="13" required/></label>
+                            <span class="help-block"></span>
+						</div>
+							
+						<div class="form-group">
+                            <label>Address: <input name="Address" type="text" required/></label>
+                            <span class="help-block"></span>
+						</div>
+						
+						<div class="form-group">
+                            <label>Email: <input name="Email" type="email" required/></label>
+                            <span class="help-block"></span>
+						</div>
+							
+						<div class="form-group">
+                            <label>UserName: <input name="UserName" type="text" required/></label>
+                            <span class="help-block"></span>
+						</div>
+						
+						<div class="form-group">
+                            <label>Password: <input id="Password" type="password" name="Password" required/></label>
+                            <span class="help-block"></span>
+						</div>	
+
+						<div class="form-group">
+                            <label>Confirm Password: <input id="ConfirmPassword" type="password" required/></label>
+                            <span class="help-block"></span>
+						</div>	
+
+							
+                       
+                        <input type="submit" class="btn btn-primary" value="Submit" name="done">
+                    
+                    </form>
+                </div>
+            </div>        
+        </div>
+    </div>
+</body>
+</html>

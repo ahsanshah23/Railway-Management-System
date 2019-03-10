@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="userlogin.js"></script>
+    </head>
+<body background ="wallpaper.jpg">
+    
+    <div class="container">
+        <div class="main">
+            <form id="form_id" method="post" name="user">
+                <h2>USER PAGE</h2>
+                <label>User Name :</label>
+                <input type="text" name="username" id="username" />
+                <label>Password :</label>
+                <input type="password" name="password" id="password" />
+                <input type="button" value="Login" id="submit" onclick="validate1()" />
+            </form>
+            <hr /><input class="MyButton" onclick="window.location.href = 'register.html'" type="button" value="REGISTER" />
+            <hr /> <input class="MyButton" onclick="window.location.href = 'Home.html'" type="button" value="Go back" />
+        </div>
+    </div>
+    
+</body>
+</html>
